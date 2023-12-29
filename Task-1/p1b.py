@@ -16,7 +16,7 @@ def convert_to_gray(image):
     gray_image
     return gray_image
 def custom_intensity(image,bits):
-    normalized_image = image / 255
+    normalized_image = image / 256
     level = 2 ** bits
     normalized_image = np.uint8(np.floor(normalized_image*level))
     return normalized_image
